@@ -1,0 +1,163 @@
+<section class="container bg-white my-4">
+  <article>
+    <main class="employeeBlock">
+      <h2 class="h2 text-uppercase py-3 font-weight-bold text-success">create
+        employee</h2>
+      <form
+        action="/employee/create-emp"
+        method="post"
+        enctype="multipart/form-data"
+      {{!-- > enctype is middleware attribute should be there compulsory --}}
+        <div class="row">
+          <div class="col-3 form-group ">
+            <label for="emp_name">Employee Name</label>
+              <input
+                type="text"
+                name="emp_name"
+                id="emp_name"
+                placeholder="enter employee name"
+                class="form-control"
+                required
+              />
+          </div>
+
+          <div class="col-3 form-group">
+            <label for="emp_id">Employee ID</label>
+              <input
+                type="text"
+                name="emp_id"
+                id="emp_id"
+                placeholder="enter employee id"
+                class="form-control"
+                required
+              />
+          </div>
+
+           <div class="col-3 form-group">
+            <label for="emp_gender">Employee Gender</label><br>
+            <input
+              type="radio"
+              name="emp_gender"
+              id="emp_gender"
+              placeholder="male"
+              value="male"
+              class="form-check-input"
+            />Male
+            <input
+              type="radio"
+              name="emp_gender"
+              id="emp_gender"
+              value="female"
+              placeholder="female"
+              class="form-check-input1"
+            />Female
+          </div>
+
+          <div class="col-3 form-group">
+            <label for="emp_edu">Employee Education</label>
+            <select name="emp_edu" id="emp_edu" class="form-control" required>
+              <option value="be">BE</option>
+              <option value="btech">BTECH</option>
+              <option value="bca">BCA</option>
+              <option value="mca">MCA</option>
+              <option value="msc">MSC</option>
+            </select>
+          </div>
+
+          <div class="col-3 form-group">
+            <label for="emp_exp">Employee Experience</label>
+            <input
+              type="text"
+              name="emp_exp"
+              id="emp_exp"
+              placeholder="enter employee experience"
+              class="form-control"
+              required
+            />
+          </div>
+
+          <div class="col-3 form-group">
+            <label for="emp_salary">Employee Salary</label>
+              <input
+                type="text"
+                name="emp_salary"
+                id="emp_salary"
+                placeholder="enter employee salary"
+                class="form-control"
+                required
+              />
+          </div>
+          
+          <div class="col-3 form-group">
+            <label for="emp_des">Employee designation</label>
+            <input
+              type="text"
+              name="emp_des"
+              id="emp_des"
+              placeholder="enter employee designation"
+              class="form-control"
+              required
+            />
+          </div>
+
+          <div class="col-3 form-group">
+            <label for="emp_email">Employee Email</label>
+              <input
+                type="text"
+                name="emp_email"
+                id="emp_email"
+                placeholder="enter employee email"
+                class="form-control"
+                required
+              />
+          </div>
+
+          <div class="col-3 form-group">
+            <label for="emp_phone">Phone number</label>
+              <input
+                type="text"
+                name="emp_phone"
+                id="emp_phone"
+                placeholder="enter employee phone"
+                class="form-control"
+                required
+              />
+          </div>
+
+          <div class="col-3 form-group">
+            <label for="emp_location">Employee Location</label>
+            <input
+              type="text"
+              name="emp_location"
+              id="emp_location"
+              placeholder="enter employee location"
+              class="form-control"
+              required
+            />
+          </div>
+          
+          <div class="col-3 form-group">
+            <label for="emp_exp">Employee Photo</label>
+            <input
+              type="file"
+              name="emp_photo"
+              id="emp_photo"
+              class="form-control"
+              required
+            />
+          </div>
+
+          <div class="col-6 form-group">
+            <label for="emp_skills">Employee Skills</label>
+            <div>
+              <input type="checkbox" name="emp_skills" value="JS" checked />JavaScript
+              <input type="checkbox" name="emp_skills" value="react" />React JS
+              <input type="checkbox" name="emp_skills" value="express" />Express JS
+            </div>
+          </div>
+        </div>
+        <button class="button" type="submit">Submit</button>
+      </form>
+    </main>
+  </article>
+</section>
